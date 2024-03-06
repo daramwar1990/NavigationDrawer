@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideMenuViewController" customModule="NavigationDrawer" customModuleProvider="target">
+            <connections>
+                <outlet property="btnCloseMenuOverlay" destination="laO-QD-2Tf" id="XOq-8n-o8Y"/>
+                <outlet property="sideMenuTableVIew" destination="dWC-gY-BRn" id="cel-0L-FyK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laO-QD-2Tf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="onCloseMenuClick:" destination="-1" eventType="touchUpInside" id="RUb-cr-gw6"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dWC-gY-BRn">
+                    <rect key="frame" x="0.0" y="54" width="312" height="376"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="laO-QD-2Tf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="0Ge-7e-Nc9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dWC-gY-BRn" secondAttribute="trailing" constant="63" id="0YO-Rp-JOx"/>
+                <constraint firstItem="laO-QD-2Tf" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="1P2-jh-CbG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dWC-gY-BRn" secondAttribute="bottom" constant="237" id="6eN-yt-DBJ"/>
+                <constraint firstItem="dWC-gY-BRn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="54" id="FlX-1n-yU5"/>
+                <constraint firstItem="dWC-gY-BRn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XQT-Ua-idu"/>
+                <constraint firstItem="laO-QD-2Tf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nqk-5p-8Cd"/>
+                <constraint firstItem="laO-QD-2Tf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="obr-e2-FHE"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="61.619190404797607"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
